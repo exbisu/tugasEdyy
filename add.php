@@ -13,48 +13,22 @@
   </head>
   <body>
         <!-- table -->
-    <section style="padding-top: 10rem;">
+    <section id="add">
     <div class="container">
       <div class="row">
-        <div class="cal-md-10">
-          <h1>My Table</h1>
+        <div class="cal-md-6">
+          <h1>Add File</h1>
           <div class="card" >
-              <table class="table ">
-          <thead class="table-dark">
-          <tr>
-          <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Handle</th>
-          </tr>
-          </thead>
-              <tbody>
-          <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-           </tr>
-            <tr>
-            <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-           </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
-           </tr>
-                </tbody>
-              </table>
+              <div class="mb-3" id="formL">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="NAME">
+                </div>
+
             <div class="card-body">
               <a href="#" class="btn btn-primary">add</a>
-              <a href="#" class="btn btn-success">update</a>
-              <a href="#" class="btn btn-danger">delete</a>
+              <a href="#" class="btn btn-danger">Cancel</a>
             </div>
-          </div>
-      
+          </div>      
         </div>
       </div>
     </div>
