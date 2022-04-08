@@ -22,8 +22,10 @@
               <div class="mb-3" id="formL">
                     <label for="name" class="form-label">Your Name</label>
                     <input type="text" class="form-control" id="name" placeholder="NAME">
+                </div>             <div class="mb-3" id="formL">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="test@email.com">
                 </div>
-
             <div class="card-body">
               <a href="#" class="btn btn-primary">add</a>
               <a href="#" class="btn btn-danger">Cancel</a>
