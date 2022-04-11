@@ -1,3 +1,11 @@
+<?php
+
+require 'algo/algo.php';
+
+$outPut =query("SELECT * FROM tbAdmin");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,30 +33,29 @@
           <th scope="col">No</th>
           <th scope="col">Name</th>
           <th scope="col">Email</th>
+          <th scope="col">Action</th>
           </tr>
           </thead>
               <tbody>
+              <?php $i=1; 
+              foreach ($outPut as $isi) {?>
           <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>@mdo</td>
-           </tr>
-            <tr>
-            <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>@fat</td>
-           </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td >Bird</td>
-              <td>@twitter</td>
-           </tr>
-                </tbody>
+              <th scope="row"><?= $i; ?></th>
+              <td><?= $isi["name"];?></td>
+              <td><?= $isi["email"];?></td>
+              <td>
+              <a href="#" class="btn btn-success">update</a>
+              <a href="#" class="btn btn-danger">delete</a>
+              </td>
+           </tr> 
+           <?php 
+            $i++;
+          } ?>
+
+           </tbody>
               </table>
             <div class="card-body">
               <a href="#" class="btn btn-primary">add</a>
-              <a href="#" class="btn btn-success">update</a>
-              <a href="#" class="btn btn-danger">delete</a>
             </div>
           </div>
       
