@@ -1,10 +1,3 @@
-<?php
-require "algo/algo.php";
-
-if(isset($_POST["submit"])){
-  var_dump($_POST);
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -24,24 +17,25 @@ if(isset($_POST["submit"])){
     <div class="container">
       <div class="row">
         <div class="cal-md-6">
-          <h1>Add File</h1>
-          <form method="post" >
+          <h1>Login</h1>
           <div class="card" >
-            <ul class="mb-3" id="formL">
-                <label for="name" class="form-label">Your Name</label>
-                <input name="name" type="text" class="form-control" id="name" >
-            </ul>            
-            <ul class="mb-3" id="formL">
-                <label for="email" class="form-label">Email</label>
-                <input name="email" type="email" class="form-control" id="email" >
-            k</ul>
-            <div class="card-body">
-
-              <button href="#" class="btn btn-primary" name="submit">add</button>
-              <a href="#" class="btn btn-danger">Cancel</a>
-            </div>
-            </div>
-          </form>      
+        <form class="fromLyout">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+          </div>      
         </div>
       </div>
     </div>

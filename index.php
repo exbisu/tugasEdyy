@@ -55,7 +55,7 @@ $outPut =query("SELECT * FROM tbAdmin");
            </tbody>
               </table>
             <div class="card-body">
-              <a href="#" class="btn btn-primary">add</a>
+              <a href="add.php" class="btn btn-primary">add</a>
             </div>
           </div>
       
