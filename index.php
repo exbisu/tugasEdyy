@@ -33,6 +33,7 @@ $outPut =query("SELECT * FROM tbAdmin");
           <th scope="col">No</th>
           <th scope="col">Name</th>
           <th scope="col">Email</th>
+          <th scope="col">Matkul</th>
           <th scope="col">Action</th>
           </tr>
           </thead>
@@ -43,6 +44,7 @@ $outPut =query("SELECT * FROM tbAdmin");
               <th scope="row"><?= $i; ?></th>
               <td><?= $isi["name"];?></td>
               <td><?= $isi["email"];?></td>
+              <td><?= $isi["matkul"];?></td>
               <td>
               <a href="#" class="btn btn-success">update</a>
               <a href="#" class="btn btn-danger">delete</a>

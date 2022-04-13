@@ -2,7 +2,19 @@
 require "algo/algo.php";
 
 if(isset($_POST["submit"])){
-  var_dump($_POST);
+    if (input($_POST)>0){
+      echo "berhasil";
+    }else{
+      echo "gagal";
+    }
+    // $name =$_POST["name"];
+    // $email=$_POST["email"];
+    // $matkul=$_POST["matkul"];
+    // $query = "INSERT INTO tbAdmin
+    //         VALUES
+    //         ('','$name','$email','$matkul')
+    //         ";
+    // mysqli_query($conn,$query);
 }
 ?>
 <!DOCTYPE html>
@@ -29,19 +41,24 @@ if(isset($_POST["submit"])){
           <div class="card" >
             <ul class="mb-3" id="formL">
                 <label for="name" class="form-label">Your Name</label>
-                <input name="name" type="text" class="form-control" id="name" >
+                <input type="text" class="form-control" id="name" >
             </ul>            
             <ul class="mb-3" id="formL">
                 <label for="email" class="form-label">Email</label>
-                <input name="email" type="email" class="form-control" id="email" >
-            k</ul>
+                <input  type="text" class="form-control" id="email" >
+            </ul>
+            <ul class="mb-3" id="formL">    
+                <label for="matkul" class="form-label">matkul</label>
+                <input type="text" class="form-control" id="matkul" >
+            </ul>
+        
             <div class="card-body">
 
-              <button href="#" class="btn btn-primary" name="submit">add</button>
+              <button class="btn btn-primary" name="submit">add</button>
               <a href="#" class="btn btn-danger">Cancel</a>
             </div>
             </div>
-          </form>      
+            </form>   
         </div>
       </div>
     </div>

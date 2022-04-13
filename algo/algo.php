@@ -12,6 +12,16 @@ function query($query){
     }
     return $rows;
 }
-
+function input($data){
+    global $conn;
+    $name =$data["name"];
+    $email=$data["email"];
+    $matkul=$data["matkul"];
+    $query = "INSERT INTO tbAdmin
+     VALUES
+    ('','$name','$email','$matkul')";
+    mysqli_query($conn,$query);
+    return mysqli_affected_rows($conn);
+}
 
 ?>
